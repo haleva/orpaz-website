@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אורפז פורגס חלוה | ייעוץ שינה לתינוקות וילדים</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Heebo & Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        night: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#090d16'
+                        },
+                        rosewood: {
+                            50: '#fff5f5',
+                            100: '#fed7d7',
+                            500: '#e53e3e',
+                            600: '#dd6b20',
+                            700: '#9b2c2c'
+                        },
+                        warmWarmth: {
+                            50: '#fdfbf7',
+                            100: '#f7f0e6',
+                            200: '#ede0ce',
+                            500: '#d97706',
+                            600: '#b45309'
+                        },
+                        pastelPink: '#FCE7F3',
+                        softIndigo: '#4F46E5',
+                        brandRose: '#E1758F',
+                        brandDarkRose: '#C7536E',
+                    },
+                    fontFamily: {
+                        sans: ['Rubik', 'Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Rubik', 'Heebo', sans-serif;
+            background-color: #FAF8F5;
+            color: #2D3748;
+        }
+        .gradient-text {
+            background: linear-[#801b38], flex;
+            background: linear-gradient(135deg, #1E293B 0%, #C7536E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top right, rgba(225, 117, 143, 0.12) 0%, rgba(255, 255, 255, 0) 70%),
+                        radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .floating-wa {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-rose-200 selection:text-rose-900">
+
+    <!-- Sticky Top Banner -->
+    <div class="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-md sticky top-0 z-50 flex items-center justify-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>מחזור קבוצתי קרוב מתחיל ב-<strong>15.9.26</strong>! <strong>עד 4 משפחות במחזור בלבד</strong></span>
+        <a href="#packages" class="underline hover:text-rose-200 mr-2 font-bold transition">לפרטים והרשמה &larr;</a>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="py-4 px-6 max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brandRose to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">
+                אפ
+            </div>
+            <div>
+                <h1 class="font-bold text-gray-900 text-base sm:text-lg leading-tight">אורפז פורגס חלוה</h1>
+                <p class="text-xs text-gray-500">יועצת שינה | מדריכת התפתחות תינוקות</p>
+            </div>
+        </div>
+        <a href="https://wa.me/972502923456?text=היי%20אורפז,%20אשמח%20לקבל%20פרטים%20על%20ייעוץ%20שינה" target="_blank" class="hidden sm:flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-full shadow transition hover:shadow-lg">
+            <i class="fab font-bold fa-whatsapp text-lg"></i>
+            <span>שיחת ייעוץ בוואטסאפ</span>
+        </a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-12 md:py-20 hero-bg overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-100/80 text-brandDarkRose text-xs sm:text-sm font-semibold border border-rose-200">
+                    <i class="fas fa-moon"></i>
+                    <span>שינה איכותית ועצמאית מגיעה גם לבית שלכם</span>
+                </div>
+
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+                    דמיינו את השעה <span class="text-brandDarkRose decoration-rose-300">20:00 בערב</span>.<br>
+                    הבית שקט, הקטנטנים ישנים בשלווה, והזמן שלכם חזר אליכם.
+                </h2>
+
+                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl font-light leading-relaxed">
+                    בלי הרדמות של שעות, בלי מסכים במיטה ובלי יאוש. תהליך ממוקד ומחבק שמעניק לילדכם הרדמות עצמאית ולכם – לילות של שינה רצופה ורוגע נפשי.
+                </p>
+
+                <!-- Key benefits quick badges -->
+                <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-sm font-medium text-gray-700">
+                    <div class="flex items-center gap-2 bg-white/80 px-3 py-2 rounded-xl shadow-sm border border-gray-100">
+                        <i class="fas fa-check-circle text-emerald-500"></i>
+                        <span>מגיל חצי שנה עד 5 שנים</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/80 px-3 py-2 rounded-xl shadow-sm border border-gray-100">
+                        <i class="fas fa-check-circle text-emerald-500"></i>
+                        <span>ליווי צמוד חודש וחצי בווטסאפ</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/80 px-3 py-2 rounded-xl shadow-sm border border-gray-100">
+                        <i class="fas fa-check-circle text-emerald-500"></i>
+                        <span>כלים לכל הילדים בבית</span>
+                    </div>
+                </div>
+
+                <!-- CTA Actions -->
+                <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#packages" class="bg-gradient-to-r from-brandRose to-brandDarkRose hover:from-rose-600 hover:to-rose-800 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition flex items-center justify-center gap-3">
+                        <span>רוצים להחזיר את הלילות לחיים?</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="#story" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold text-lg px-6 py-4 rounded-2xl shadow border border-gray-200 transition flex items-center justify-center gap-2">
+                        <span>למה זה כל כך קשה?</span>
+                        <i class="fas fa-chevron-down text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image / Visual Box -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <!-- Decorative backdrop elements -->
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-rose-200 rounded-full blur-2xl opacity-60"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-indigo-200 rounded-full blur-2xl opacity-60"></div>
+                    
+                    <!-- Main Image Card -->
+                    <div class="relative glass-card rounded-3xl p-4 shadow-2xl border border-white">
+                        <div class="overflow-hidden rounded-2xl aspect-[4/5] bg-rose-100">
+                            <img src="FB_IMG_1786046207689.jpg" 
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80';" 
+                                 alt="אורפז פורגס חלוה - יועצת שינה" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="mt-4 p-3 bg-white/90 rounded-xl border border-gray-100 flex items-center gap-4">
+                            <div class="bg-rose-100 text-brandDarkRose p-3 rounded-full">
+                                <i class="fas fa-heart text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-base">אורפז פורגס חלוה</h3>
+                                <p class="text-xs text-gray-500">"שינה היא צורך בסיסי של כל הבית - וזה לחלוטין אפשרי!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EMOTIONAL STORY SECTION -->
+    <section id="story" class="py-16 bg-white relative">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-brandDarkRose font-bold tracking-wide uppercase text-sm">נשמע לכם מוכר?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">השעה 21:00 בערב, ואתם פשוט מותשים...</h2>
+                <div class="w-20 h-1 bg-brandRose mx-auto rounded-full"></div>
+            </div>
+
+            <div class="prose prose-lg text-gray-700 leading-relaxed space-y-6 bg-amber-50/50 p-6 sm:p-10 rounded-3xl border border-amber-100 shadow-sm">
+                
+                <p class="text-xl font-medium text-slate-800">
+                    תעצמו עיניים ותחשבו על הערב שלכם:
+                </p>
+
+                <p>
+                    יום עבודה ארוך הסתיים, אספתם את הילדים, רצתם איתם, בישלתם, ניקיתם, שיחקתם. עכשיו השעה 21:00. כל מה שבא לכם לעשות זה פשוט להיכנס למקלחת חמה, להוריד מעליכם את עומס היום, לשבת בשקט בסלון מול הטלוויזיה או סתם לנשום עמוק ליד בן/בת הזוג.
+                </p>
+
+                <div class="my-6 p-5 bg-white rounded-2xl border-r-4 border-brandDarkRose shadow-sm italic text-gray-800">
+                    "אבל המציאות? הילדים רק עכשיו נזכרו לצחצח שיניים, הכל התעכב, שותים עוד מים, עוד סיפור, שוב קמים מהמיטה, או שהם נרדמים רק מול הטלוויזיה בסלון או כשהטלפון אצלם ביד..."
+                </div>
+
+                <p>
+                    אתם מוצאים את עצמכם מזזזגזגים בין החדרים עד 22:30 או 23:00, מתוחים, עייפים ועם אפס זמן לעצמכם. ובלילה? יקיצות מרובות, מעברים למיטה שלכם, והבוקר מגיע כשאתם עייפים עוד לפני שהיום בכלל بدأ.
+                </p>
+
+                <p class="font-semibold text-slate-900 text-lg pt-2">
+                    החדשות הטובות הן: זה לא חייב להמשיך ככה. הילדים שלכם מסוגלים להירדם בכוחות עצמם בכיף וברוגע – ואתם יכולים לקבל את הערבים והלילות שלכם בחזרה!
+                </p>
+
+            </div>
+
+            <!-- Pain Points Icons -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
+                <div class="bg-rose-50/60 p-5 rounded-2xl text-center border border-rose-100">
+                    <div class="w-12 h-12 bg-rose-200 text-rose-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-1">הרדמות שנמשכות שעות</h4>
+                    <p class="text-xs text-gray-600">מאבקים בלתי נגמרים בכל ערב מחדש</p>
+                </div>
+
+                <div class="bg-indigo-50/60 p-5 rounded-2xl text-center border border-indigo-100">
+                    <div class="w-12 h-12 bg-indigo-200 text-indigo-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-1">תלות במסכים / נוכחות</h4>
+                    <p class="text-xs text-gray-600">נרדמים רק מול טלוויזיה, טלפון או כשאחד ההורים לידם</p>
+                </div>
+
+                <div class="bg-amber-50/60 p-5 rounded-2xl text-center border border-amber-100">
+                    <div class="w-12 h-12 bg-amber-200 text-amber-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-1">עייפות מצטברת לבית</h4>
+                    <p class="text-xs text-gray-600">חוסר באנרגיה, זוגיות שנפגעת ותסכול הורי</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TARGET AUDIENCE SECTION -->
+    <section class="py-14 bg-slate-900 text-white relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="inline-block bg-rose-500/20 text-rose-300 px-3.5 py-1 rounded-full text-sm font-semibold border border-rose-500/30">
+                        למי תהליך הייעוץ מתאים?
+                    </div>
+                    <h3 class="text-3xl font-bold">משפחות לילדים בגילאי חצי שנה עד 5 שנים</h3>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        הייעוץ מתמקד בילד/ה שכרגע הכי מאתגר איתו בענייני השינה. 
+                        עם זאת, הכלים והעקרונות שתלמדו בתהליך יתאימו <strong>לכל הבית</strong> – ואם זה הילד הראשון שלכם, הכלים הנהדרים האלה ילכו איתכם הלאה גם לילדים הבאים!
+                    </p>
+                    <ul class="space-y-2 pt-2 text-slate-200 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-emerald-400"></i>
+                            <span>מתאים לתינוקות החל מגיל 6 חודשים</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-emerald-400"></i>
+                            <span>מתאים לפעוטות וילדים עד גיל 5</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-emerald-400"></i>
+                            <span>מתאים גם לתאומים ולאחים הקטנים/הגדולים בבית</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-5 bg-slate-800/90 p-6 rounded-3xl border border-slate-700 text-center space-y-4">
+                    <div class="w-16 h-16 bg-rose-500/20 text-rose-400 rounded-full flex items-center justify-center mx-auto text-2xl">
+                        <i class="fas fa-hands-holding-child"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white">גישה מכילה, חמה וללא שיפוט</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        בלי לעזוב את הילד לבכות בחדר. עבודה הדרגתית, רגישה ומותאמת לקצב של הילד וההורים.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES SECTION -->
+    <section id="packages" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandDarkRose font-bold tracking-wider uppercase text-sm">איך נעבוד יחד?</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900">מסלולי ייעוץ השינה שלי</h2>
+                <p class="text-gray-600 text-lg">בחר/י את המסלול המתאים ביותר עבור המשפחה שלכם:</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Package 1: Individual -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition border border-gray-100 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-slate-800"></div>
+
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">מסלול פרימיום</span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-1">ייעוץ שינה פרטני</h3>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-xs font-bold px-3 py-1.5 rounded-full">אישי 1-על-1</span>
+                        </div>
+                        
+                        <p class="text-gray-600 text-sm mb-6">
+                            ליווי אישי וממוקד 100% במשפחה שלכם ובצרכים הייחודיים של הילד/ה.
+                        </p>
+
+                        <hr class="border-gray-100 mb-6">
+
+                        <h4 class="font-bold text-slate-800 mb-4 text-sm uppercase tracking-wider">מה כולל המסלול הפרטני?</h4>
+                        <ul class="space-y-4 text-sm text-gray-700">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-clipboard-list text-brandRose text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">מילוי שאלון מקיף:</strong> מיפוי מלא של הרגלי השינה, התזונה, והסדר היומי.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-video text-brandRose text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">פגישת עומק ממוקדת:</strong> בזום (תפיל לכם המון אסימונים!) או פגישה פרונטלית במידה ומתגוררים באזור השרון.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-journal-whills text-brandRose text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">מילוי יומן תצפית:</strong> ניתוח מדויק של שגרת היום והלילה בזמן אמת.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-map-signs text-brandRose text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">תוכנית עבודה מותאמת אישית:</strong> בניית תהליך צעד-אחר-צעד עם מטרות ברורות להשגה.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fab fa-whatsapp text-emerald-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">ליווי יד ביד במשך חודש וחצי:</strong> בקבוצת ווטסאפ פרטית, זמינות לכל שאלה, דיוק בזמן אמת ושיתוף רציף.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-gray-100">
+                        <a href="https://wa.me/972502923456?text=היי%20אורפז,%20אשמח%20לקבל%20פרטים%20נוספים%20ומחיר%20לייעוץ%20שינה%20פרטני" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-2xl shadow transition flex items-center justify-center gap-2">
+                            <span>לתיאום ייעוץ פרטני</span>
+                            <i class="fas fa-arrow-left text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 2: Group -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition border-2 border-brandRose flex flex-col justify-between relative overflow-hidden">
+                    
+                    <!-- Top Ribbon Badge -->
+                    <div class="absolute top-0 left-0 bg-gradient-to-r from-brandRose to-brandDarkRose text-white text-xs font-black px-4 py-1.5 rounded-br-2xl shadow">
+                        50% ממחיר פרטני! 🎯
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-start mb-4 mt-2">
+                            <div>
+                                <span class="text-xs font-bold text-brandDarkRose tracking-wider uppercase">מחזור מצומצם ואינטימי</span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-1">ייעוץ שינה קבוצתי</h3>
+                            </div>
+                            <span class="bg-rose-100 text-brandDarkRose text-xs font-bold px-3 py-1.5 rounded-full">עד 4 משפחות</span>
+                        </div>
+                        
+                        <p class="text-gray-600 text-sm mb-6">
+                            <strong class="text-slate-900 bg-rose-100 px-1 rounded">המחזור הקרוב מתחיל ב-15.9.26!</strong> תהליך אינטימי ומחבק עם יתרון ענק של שיתוף ולמידה גם ממשפחות נוספות (נפתח אחת לחודשיים).
+                        </p>
+
+                        <hr class="border-gray-100 mb-6">
+
+                        <h4 class="font-bold text-slate-800 mb-4 text-sm uppercase tracking-wider">מה כולל המסלול הקבוצתי?</h4>
+                        <ul class="space-y-4 text-sm text-gray-700">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-users text-brandDarkRose text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">מחזור אינטימי:</strong> עד 4 משפחות בלבד בכל מחזור כדי לשמור על מענה אישי ומדויק.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-clipboard-check text-brandDarkRose text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">שאלון אישי לכל משפחה:</strong> אבחון פרטני של הצרכים שלכם לפני המפגש.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-desktop text-brandDarkRose text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">זום משותף ומעמיק:</strong> מפגש שיפיל המון אסימונים ויתן לכם מפת דרכים ברורה.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-book-open text-brandDarkRose text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">מילוי יומן תצפית אישי:</strong> לכל משפחה בנפרד למעקב מלא.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fab fa-whatsapp text-emerald-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <strong class="text-slate-900">ליווי יד ביד חודש וחצי בקבוצת ווטסאפ:</strong> מענה מלא לשאלות, דיוקים, שיתופים ותמיכה הדדית.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-gray-100">
+                        <div class="mb-3 text-center text-xs text-brandDarkRose font-semibold">
+                            🔥 מחיר נגיש במיוחד: 50% ממחיר הייעוץ הפרטני
+                        </div>
+                        <a href="https://wa.me/972502923456?text=היי%20אורפז,%20אשמח%20להירשם%20למחזור%20הקרוב%20של%20ייעוץ%20השינה%20הקבוצתי" target="_blank" class="w-full bg-gradient-to-r from-brandRose to-brandDarkRose hover:from-rose-600 hover:to-rose-700 text-white font-bold py-4 rounded-2xl shadow-lg transition flex items-center justify-center gap-2">
+                            <span>להבטחת מקום במחזור הקרוב</span>
+                            <i class="fas fa-arrow-left text-sm"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="py-20 bg-white relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Images Collage -->
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="rounded-2xl overflow-hidden shadow-md h-48 sm:h-60 border border-gray-100 bg-rose-50">
+                            <img src="IMG-20250701-WA0031.jpg" 
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&q=80';" 
+                                 alt="אורפז בפעילות עם תינוקות" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-rose-50 p-4 rounded-2xl text-center border border-rose-100">
+                            <i class="fas fa-heart text-brandDarkRose text-2xl mb-1"></i>
+                            <p class="text-xs font-bold text-gray-800">הנאה וביטחון בתהליך</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-6">
+                        <div class="bg-amber-50 p-4 rounded-2xl text-center border border-amber-100">
+                            <i class="fas fa-star text-amber-500 text-2xl mb-1"></i>
+                            <p class="text-xs font-bold text-gray-800">ליווי מקצועי ורגיש</p>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-md h-48 sm:h-60 border border-gray-100 bg-indigo-50">
+                            <img src="PXL_20240501_084928513.jpg" 
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80';" 
+                                 alt="מדריכת התפתחות ועיסוי תינוקות" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bio Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-brandDarkRose font-bold text-sm tracking-wider uppercase">נעים להכיר!</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900">קוראים לי אורפז פורגס חלוה</h2>
+
+                    <p class="text-gray-700 leading-relaxed text-base sm:text-lg">
+                        אני נשואה לבר, החבר הכי טוב שלי, ואמא לשלושה אפרוחים מקסימים שאימנו אותי יום-יום בלהבין בדיוק מה הורים עוברים בבית.
+                    </p>
+
+                    <div class="space-y-3">
+                        <h4 class="font-bold text-slate-900 text-sm">ההכשרה והעשייה שלי:</h4>
+                        <div class="flex flex-wrap gap-2 text-xs sm:text-sm font-medium">
+                            <span class="bg-rose-100 text-brandDarkRose px-3 py-1.5 rounded-full">✨ יועצת שינה מוסמכת</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1.5 rounded-full">✨ מדריכת התפתחות תינוקות</span>
+                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1.5 rounded-full">✨ מדריכת עיסוי תינוקות</span>
+                        </div>
+                    </div>
+
+                    <!-- Belief Quote Box -->
+                    <div class="bg-slate-900 text-white p-6 rounded-3xl space-y-3 relative shadow-xl">
+                        <div class="text-rose-400 text-3xl font-serif">"</div>
+                        <p class="text-slate-200 italic font-light leading-relaxed">
+                            אני מאמינה ש<strong>צורך משפיע על צורך</strong> – ולכן שינה היא חלק בלתי נפרד מההתפתחות של הילד ומרווחת הנפש של כל בני הבית. חשוב שתישנו טוב וזה לגמרי אפשרי! אני פה כדי לעזור לכם לתת לזה לקרות.
+                        </p>
+                        <div class="text-left font-bold text-rose-300 text-sm">— אורפז</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 bg-rose-50/50">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center space-y-3 mb-16">
+                <span class="text-brandDarkRose font-bold tracking-wider uppercase text-sm">סיפורי הצלחה</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900">הורים מספרים אחרי השינוי</h2>
+                <p class="text-gray-600">כשחופש, שקט ושינה טובה חוזרים לחיים:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100 flex flex-col justify-between space-y-4">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-800 leading-relaxed font-normal">
+                            "אורפז המדהימה עזרה לי בתהליך השינה של התאומים שלי, מילדים שהיו נרדמים מול הטלוויזיה בסלון, היום נרדמים עצמאית בחדר שלהם, אחרי טקס שינה קצר ונעים. אורפז שדרגה לנו לגמרי את אחר הצהריים. בנוסף, החלטנו להכניס גם את הגדולה (בכיתה ב') לתהליך וגם היא למדה להירדם בחדר שלה. ממליצה על אורפז בחום, חיוכנית ונעימה, לא שיפוטית, מלאת ידע והבנה וטיפים מוצלחים."
+                        </p>
+                    </div>
+
+                    <!-- Original Screenshot Reference -->
+                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-rose-100 text-brandDarkRose flex items-center justify-center font-bold">
+                                א
+                            </div>
+                            <div>
+                                <span class="font-bold text-slate-900 text-sm block">אמא לתאומים וילדה בכיתה ב'</span>
+                                <span class="text-xs text-emerald-600 font-semibold">✓ תהליך ייעוץ מוצלח</span>
+                            </div>
+                        </div>
+                        <a href="Screenshot_20260806-230012.png" target="_blank" class="text-xs text-gray-400 hover:text-brandDarkRose underline flex items-center gap-1">
+                            <span>צפה בהמלצה המקורית</span>
+                            <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100 flex flex-col justify-between space-y-4">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-800 leading-relaxed font-normal">
+                            "עברנו ליווי שינה עם אורפז המדהימה. הגענו בעזרתה ממצב שבו הילד שלנו בן השנתיים נרדם אך ורק עם טלפון, איתנו בחדר ובשעות 22:30-23:00, למצב בו הוא נרדם עצמאית ללא טלפון סביב השעה 20:00. לא האמנו שזה מצב שאפשרי לילד שלנו אבל עם תוכנית העבודה, העזרה והליווי הסבלני והמקצועי של אורפז הגענו לזה ובערנק! ממליצה בחום ❤️"
+                        </p>
+                    </div>
+
+                    <!-- Original Screenshot Reference -->
+                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+                                מ
+                            </div>
+                            <div>
+                                <span class="font-bold text-slate-900 text-sm block">הורים לילד בן שנתיים</span>
+                                <span class="text-xs text-emerald-600 font-semibold">✓ תהליך ייעוץ מוצלח</span>
+                            </div>
+                        </div>
+                        <a href="Screenshot_20260806-225726.png" target="_blank" class="text-xs text-gray-400 hover:text-brandDarkRose underline flex items-center gap-1">
+                            <span>צפה בהמלצה המקורית</span>
+                            <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Screenshot Preview Thumbnails Gallery -->
+            <div class="mt-12 text-center space-y-4">
+                <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider">צילומי מסך מהודעות ההורים:</p>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="Screenshot_20260806-230012.png" target="_blank" class="w-36 sm:w-44 p-3 rounded-2xl bg-emerald-50 border border-emerald-200 shadow hover:shadow-md transition text-right block">
+                        <div class="flex items-center gap-1.5 text-emerald-700 font-bold text-xs mb-1">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>המלצת תאומים</span>
+                        </div>
+                        <p class="text-[11px] text-gray-600 line-clamp-3 leading-tight">"אורפז המדהימה עזרה לי בתהליך השינה של התאומים..."</p>
+                        <span class="text-[10px] text-emerald-600 font-semibold underline mt-2 block text-left">לחץ לפתיחה ↗</span>
+                    </a>
+                    
+                    <a href="Screenshot_20260806-225726.png" target="_blank" class="w-36 sm:w-44 p-3 rounded-2xl bg-indigo-50 border border-indigo-200 shadow hover:shadow-md transition text-right block">
+                        <div class="flex items-center gap-1.5 text-indigo-700 font-bold text-xs mb-1">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>המלצת גיל 2</span>
+                        </div>
+                        <p class="text-[11px] text-gray-600 line-clamp-3 leading-tight">"ממצב שהילד נרדם רק עם טלפון בשעה 22:30..."</p>
+                        <span class="text-[10px] text-indigo-600 font-semibold underline mt-2 block text-left">לחץ לפתיחה ↗</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            
+            <div class="text-center space-y-3 mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">שאלות נפוצות</h2>
+                <p class="text-gray-500 text-sm">תשובות לשאלות שרוב ההורים שואלים אותי לפני שמתחילים:</p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <details class="group bg-stone-50 p-5 rounded-2xl border border-stone-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-800">
+                        <span>האם התהליך כולל בכי או עזיבת הילד בחדר?</span>
+                        <span class="transition group-open:-rotate-180 text-brandDarkRose">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                        ממש לא. התהליך מבוסס על מענה לבכי ולצרכים של הילד. אנחנו לא משאירים ילד לבכות בחדר סגור, אלא עובדים בהדרגתיות עם המון נוכחות, חום וביטחון.
+                    </p>
+                </details>
+
+                <details class="group bg-stone-50 p-5 rounded-2xl border border-stone-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-800">
+                        <span>מה ההבדל העיקרי בין המסלול הפרטני לקבוצתי?</span>
+                        <span class="transition group-open:-rotate-180 text-brandDarkRose">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                        במסלול הפרטני המפגש והליווי מוקדשים 100% למשפחה שלכם. במסלול הקבוצתי (עד 4 משפחות בלבד), המפגש והקבוצה משותפים, מה שמאפשר ליהנות מתמיכה הדדית ולמידה מאתגרים של משפחות נוספות, ובמחיר של 50% ממחיר פרטני!
+                    </p>
+                </details>
+
+                <details class="group bg-stone-50 p-5 rounded-2xl border border-stone-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-800">
+                        <span>אנחנו לא גרים באזור השרון, האם אפשר לעשות ייעוץ פרטני?</span>
+                        <span class="transition group-open:-rotate-180 text-brandDarkRose">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                        בהחלט! פגישת העומק מתקיימת בזום ומתאימה להורים מכל מקום בארץ (ומהעולם). הפגישה הפרונטלית מיועדת רק לתושבי אזור השרון שמעוניינים בכך.
+                    </p>
+                </details>
+
+                <details class="group bg-stone-50 p-5 rounded-2xl border border-stone-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-800">
+                        <span>תוך כמה זמן רואים תוצאות?</span>
+                        <span class="transition group-open:-rotate-180 text-brandDarkRose">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                        שינויים ראשונים ומשמעותיים רואים כבר במהלך השבועיים הראשונים! התהליך נמשך חודש וחצי על מנת לקבע את ההרגלים החדשים, להטמיע אותם בביטחון ולהתמודד עם כל מקרה קצה (שיניים, מחלה, סופ"ש וכד').
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT / FINAL CTA SECTION -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            
+            <div class="space-y-4">
+                <span class="bg-rose-500/20 text-rose-300 text-xs font-bold px-4 py-1.5 rounded-full border border-rose-500/30">
+                    מוכנים ללילה הראשון של השינוי?
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black">בואו נחזיר את הלילות השקטים לבית שלכם</h2>
+                <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-light">
+                    השאירו פרטים קצרים או שלחו לי הודעה ישירה לוואטסאפ, ונבדוק יחד איזה מסלול הכי מדויק עבור המשפחה שלכם.
+                </p>
+            </div>
+
+            <!-- Form -->
+            <form onsubmit="handleSubmit(event)" class="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-white/10 space-y-4 text-right max-w-xl mx-auto shadow-2xl">
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">שם מלא</label>
+                    <input type="text" id="formName" required placeholder="השם שלכם" class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-rose-400">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">מספר טלפון</label>
+                        <input type="tel" id="formPhone" required placeholder="050-0000000" class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-rose-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">גיל הילד/ה</label>
+                        <input type="text" id="formAge" placeholder="לדוגמה: שנה ושמונֶה" class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-rose-400">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">מסלול מעניין אותי</label>
+                    <select id="formPackage" class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-rose-400">
+                        <option value="ייעוץ שינה פרטני">ייעוץ שינה פרטני</option>
+                        <option value="ייעוץ שינה קבוצתי">ייעוץ שינה קבוצתי (50% מחיר)</option>
+                        <option value="רוצה להתייעץ תחילה">רוצה להתייעץ תחילה</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-brandRose to-brandDarkRose hover:from-rose-500 hover:to-rose-700 text-white font-bold py-4 rounded-xl shadow-lg transition text-base mt-2 flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span>שליחת פרטים והעברה לוואטסאפ</span>
+                </button>
+                <div id="formSuccess" class="hidden text-emerald-400 text-xs font-bold text-center pt-2">
+                    ✓ הפרטים נקלטו! מעביר אותך לוואטסאפ של אורפז...
+                </div>
+            </form>
+
+            <!-- Direct WA Link -->
+            <div class="pt-4 flex items-center justify-center gap-2 text-slate-400 text-sm">
+                <span>מעדיפים לקצר תהליכים?</span>
+                <a href="https://wa.me/972502923456?text=היי%20אורפז,%20אשמח%20לדבר%20על%20ייעוץ%20שינה" target="_blank" class="text-emerald-400 hover:underline font-bold flex items-center gap-1">
+                    <span>פנו אליי ישירות בוואטסאפ (050-2923456)</span>
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-500 py-8 text-center text-xs border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 space-y-2">
+            <p>אורפז פורגס חלוה - ייעוץ שינה לתינוקות וילדים, מדריכת התפתחות ועיסוי תינוקות.</p>
+            <p>© כל הזכויות שמורות {new Date().getFullYear()}</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/972502923456?text=היי%20אורפז,%20הגעתי%20מהאתר%20ואשמח%20לקבל%20פרטים%20על%20ייעוץ%20שינה" target="_blank" aria-label="WhatsApp" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 floating-wa transition">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('formName').value;
+            const phone = document.getElementById('formPhone').value;
+            const age = document.getElementById('formAge').value || 'לא צוין';
+            const selectedPackage = document.getElementById('formPackage').value;
+
+            // Formatting message for WhatsApp
+            const message = `היי אורפז, השארתי פרטים באתר בנוגע לייעוץ שינה:
+• שם מלא: ${name}
+• טלפון: ${phone}
+• גיל הילד/ה: ${age}
+• מסלול מבוקש: ${selectedPackage}`;
+
+            const successEl = document.getElementById('formSuccess');
+            if(successEl) {
+                successEl.classList.remove('hidden');
+            }
+
+            // Redirect to WhatsApp with pre-filled message
+            const encodedMessage = encodeURIComponent(message);
+            const waUrl = `https://wa.me/972502923456?text=${encodedMessage}`;
+
+            setTimeout(() => {
+                window.open(waUrl, '_blank');
+            }, 500);
+        }
+    </script>
+</body>
+</html>
